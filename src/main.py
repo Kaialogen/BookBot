@@ -1,5 +1,5 @@
 import sys
-from stats import word_count, character_count, sorted_list
+from src.stats import word_count, character_count, sorted_list
 
 def get_book_text(filepath):
     """
@@ -21,7 +21,7 @@ def main():
     sorted_list_of_characters = sorted_list(output)
 
     print("============ BOOKBOT ============")
-    print(f"Analyzing book found at {file_name}...")
+    print(f"Analysing book found at {file_name}...")
     print("----------- Word Count ----------")
     print(f"Found {num_words} total words")
     print("--------- Character Count -------")
