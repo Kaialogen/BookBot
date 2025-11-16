@@ -22,3 +22,22 @@ def character_count(text):
                 result[character] = 1
     
     return result
+
+def sorted_list(character_dict):
+    """
+   @character_dict: dictionary: dictionary of characters and counts
+   @return: list: A list of sorted dictionaries 
+    """
+    list = []
+
+    for key in character_dict:
+        temp = {}
+        temp["char"] = key
+        temp["num"] = character_dict[key]
+        list.append(temp)
+
+    list.sort(reverse=True, key=sort_on)
+    return list
+
+def sort_on(items):
+    return items["num"]
