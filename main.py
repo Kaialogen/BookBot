@@ -1,5 +1,5 @@
 import sys
-from src.stats import word_count, character_count, sorted_list
+from stats import word_count, character_count, sorted_list
 
 def get_book_text(filepath):
     """

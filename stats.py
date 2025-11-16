@@ -28,16 +28,16 @@ def sorted_list(character_dict):
    @character_dict: dictionary: dictionary of characters and counts
    @return: list: A list of sorted dictionaries 
     """
-    list = []
+    result_list = []
 
     for key in character_dict:
         temp = {}
         temp["char"] = key
         temp["num"] = character_dict[key]
-        list.append(temp)
+        result_list.append(temp)
 
-    list.sort(reverse=True, key=sort_on)
-    return list
+    result_list.sort(reverse=True, key=sort_on)
+    return result_list
 
 def sort_on(items):
     return items["num"]
