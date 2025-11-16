@@ -1,5 +1,5 @@
 # BookBot
-
+- BookBot is a Python CLI application that does data analysis on books provided as text files. It computes various statistics such as word count, unique words, average word length, and the most common words.
 
 ## Usage
 
